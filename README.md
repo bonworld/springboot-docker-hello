@@ -59,3 +59,9 @@ create Procfile and add the command to start the application
 heroku local web
 
 heroku run bash : for login to heroku terminal
+
+
+ git init
+$ echo target > .gitignore
+$ git add .
+$ git commit -m init
