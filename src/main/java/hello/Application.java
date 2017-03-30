@@ -2,6 +2,7 @@ package hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ public class Application {
     @RequestMapping("/greeting")
     public String home(@RequestParam(value="name",defaultValue = "world") String name) {
 
+        System.out.println("counter from greetings app"+counter);
         return "No."+counter.incrementAndGet()+ " "+ String.format(template,name);
     }
 
