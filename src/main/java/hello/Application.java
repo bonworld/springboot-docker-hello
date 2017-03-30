@@ -23,6 +23,13 @@ public class Application {
         return "No."+counter.incrementAndGet()+ " "+ String.format(template,name,env);
     }
 
+
+    @RequestMapping("/")
+    public String health()
+    {
+        return "bonworld is healthy";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

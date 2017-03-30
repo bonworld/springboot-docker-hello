@@ -1,5 +1,5 @@
 build
 classes
 .gradle
-.idea
-.mvn
+.idea/
+.mvn/
