@@ -14,12 +14,13 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Application {
 
     private AtomicLong counter = new AtomicLong();
-    private String template = "Hello Docker World %s";
+    private String template = "Hello Docker World %s %s";
     @RequestMapping("/greeting")
     public String home(@RequestParam(value="name",defaultValue = "world") String name) {
 
         System.out.println("counter from greetings app"+counter);
-        return "No."+counter.incrementAndGet()+ " "+ String.format(template,name);
+        String env = System.getenv("app_env");
+        return "No."+counter.incrementAndGet()+ " "+ String.format(template,name,env);
     }
 
     public static void main(String[] args) {

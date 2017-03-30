@@ -53,7 +53,9 @@ To view the logs:
 run ---> heroku logs --tail
 
 
-Testing the local changes
+Testing the local changes:
 create Procfile and add the command to start the application
 
 heroku local web
+
+heroku run bash : for login to heroku terminal
