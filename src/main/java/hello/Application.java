@@ -17,7 +17,7 @@ public class Application {
     @RequestMapping("/greeting")
     public String home(@RequestParam(value="name",defaultValue = "world") String name) {
 
-        return counter.incrementAndGet()+ String.format(template,name);
+        return "No."+counter.incrementAndGet()+ " "+ String.format(template,name);
     }
 
     public static void main(String[] args) {
