@@ -1,3 +1,9 @@
+Health End point:
+https://bonworld.herokuapp.com/
+
+GET End point:
+https://bonworld.herokuapp.com/greeting?name=bony
+
 # springboot-docker-hello
 spring boot docker hello world example
 http://containertutorials.com/docker-compose/spring-boot-app.html
@@ -68,3 +74,10 @@ heroku config:set APP_ENV=DEV
 $ echo target > .gitignore
 $ git add .
 $ git commit -m init
+
+
+removing and adding a new name to heroku app url
+https://bonworld.herokuapp.com/greeting?name=bony
+
+ git remote rm heroku
+$ heroku git:remote -a newname
