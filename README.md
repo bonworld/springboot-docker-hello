@@ -60,6 +60,9 @@ heroku local web
 
 heroku run bash : for login to heroku terminal
 
+setting env variable:
+
+heroku config:set APP_ENV=DEV
 
  git init
 $ echo target > .gitignore

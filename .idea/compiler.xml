@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gradle-getting-started_main" target="1.8" />
+      <module name="gradle-getting-started_test" target="1.8" />
       <module name="springboot-docker-hello_main" target="1.8" />
       <module name="springboot-docker-hello_test" target="1.8" />
     </bytecodeTargetLevel>
